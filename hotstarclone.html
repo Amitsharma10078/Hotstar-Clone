@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .nav-bar {
+            height: 80px;
+            width: 100%;
+            background-color: black;
+            align-items: center;
+            display: flex;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-items {
+            position: absolute;
+            right: 0;
+        }
+
+        .nav-items a {
+            color: aliceblue;
+            text-decoration: none;
+            margin: 7px;
+            font-size: 25px;
+            font-family: "https://fonts.google.com/specimen/Explora";
+        }
+
+        .nav-items a:hover {
+            text-decoration: underline;
+            color: goldenrod;
+        }
+
+        h2 {
+            color: aliceblue;
+        }
+
+        .trend-img {
+            margin-left: 28px;
+        }
+
+        .trend-img img {
+            width: 15%;
+            margin: 5px;
+        }
+
+        .trend-img img:hover {
+            transform: scale(1.2);
+            transition: all 0.5s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .carousel-inner img {
+            width: 95%;
+            height: 500px;
+            border-radius: 20px;
+        }
+
+        .home {
+            margin-left: 60px;
+            margin-top: 100px;
+        }
+
+        .new-add {
+            margin-left: 28px;
+        }
+
+        .new-add img {
+            width: 15%;
+            margin: 5px;
+        }
+
+        .new-add img:hover {
+            transform: scale(1.2);
+            transition: all 0.5s ease-in-out;
+            border-radius: 10px;
+        }
+    
+        .h6-text {
+            height: 100px;
+            width: 500px;
+            text-align: justify;
+            color:whitesmoke;
+        }
+        .about{
+            margin-top: 50px;
+        }
+
+        .about-play{
+            margin-left: 100px;
+            color: aliceblue;
+        }
+        .about-play img{
+            height: 40px;
+            width: 45%;
+        }
+        .about-connect img{
+            height: 40px;
+            width: 15%;
+        }
+        .about-connect{
+          margin-left: 200px;
+          width: 200px;
+          color: aliceblue;
+        }
+        .about-content{
+            display: flex;
+        }
+        .about-all{
+            display: flex;
+        }
+    </style>
+    <script>
+  function log()
+	{
+     window.alert('Are you sure want to login!!!!!!!')
+            window.location = "login1.html";
+        
+    }
+    </script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+                    alt=" ">
+            </div>
+            <div class="nav-items">
+                <a href="#Home">Home</a>
+                <a href="#Trending">Trending</a>
+                <a href="#Newly added">Newly added</a>
+                <a href="##">Favorites</a>
+                <a href="#" class="log" onClick="log()">Login</a>
+                <a href="##">About</a>
+            </div>
+        </div>
+        <div class="home" id="Home">
+            <div id="carouselExampleSlidesOnly" class="carousel-slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/2742/1462742-h-825f30cb8681"
+                            class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9353/1459353-h-6fce213e30b3"
+                            class="d-block " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1157/1451157-h-945591285ed5"
+                            class="d-block " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/5119/1455119-h-2a917e92adac5"
+                            class="d-block" alt=" ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trend">
+            <div class="trend-text">
+                <h2>Treanding</h2>
+            </div>
+            <div class="trend-img" id="Trending">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3056/1393056-v-0fc762bea369"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4293/754293-v"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7676/647676-v"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5682/1415682-v-79a200913aca"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9231/1389231-v-6191b0d9af4f"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7676/647676-v"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2350/1282350-v-15ffecf89380"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/4072/1000044072/1000044072-v"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9219/1389219-v-9752e6e5bb92"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5448/515448-v"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7642/1307642-v-3d3b6c61f97e"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4373/1124373-v-4f2a381d376f"
+                    alt="">
+            </div>
+            <div class="trend1">
+                <div class="trend-text1">
+                    <h2>Newly Added</h2>
+                </div>
+            </div>
+            <div class="new-add" id="Newly added">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1_5x/sources/r1/cms/prod/4572/1284572-v-f85126d33072"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5362/1395362-v-f8d73be7dd01"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4253/1364253-v-17a2ff74143c"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5682/1415682-v-79a200913aca"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6847/1276847-v-8d8a3e56f019"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9986/1309986-v-f19f45e7f2f1"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2387/1452387-v-e9e11947b44a"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4255/1364255-v-7d13c9d136b5"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9219/1389219-v-9752e6e5bb92"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5448/515448-v"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/        42491364249-v-2e30b93b7bb5"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5417/1445417-v-840d65acff43"
+                    alt="">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1_5x/sources/r1/cms/prod/1653/1431653-v-f6c5b91a3235"
+                    alt="">
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-items">
+                <a href="">About</a>
+                <a href="">Disney+ </a>
+                <a href="">HotstarTerms of</a>
+                <a href="">UsePrivacy</a>
+                <a href="">Policy</a>
+                <a href="">FAQ</a>
+                <a href="">Feedback</a>
+                <a href="">Careers</a>
+            </div>
+                <div class="about-all">
+                    <div class="about-text">
+                        <h6 class="h6-text">© 2023 STAR. All Rights Reserved. HBO, Home Box Office and all related
+                            channel and programming logos are service marks of, and all related programming visuals and
+                            elements are the property of, Home Box Office, Inc. All rights reserved</h6>
+                    </div>
+                    <div class="about-connect">
+                        <h4>connect with us</h4>
+                        <img src="https://e7.pngegg.com/pngimages/175/452/png-clipart-facebook-logo-facebook-icon-logo-facebook-icon-blue-text-thumbnail.png" alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="">
+                    </div>
+                    <div class="about-play">
+                        <h4>Disney+Hotstar App</h4>
+                        <img src="img2.jpg" alt="">
+                        <img src="log1.png" alt="">
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="alerts" id="login">
+           <h1> alert("This is an alert message box.");</h1>
+        </div>
+    </div>
+    </body>
+</html>

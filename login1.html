@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo {
+            margin-left: 400px;
+            margin-top: 100px;
+            width: 34%;
+            height: 500px;
+            background-color: rgba(192, 192, 192, 0.185);
+            border-radius: 30px;}
+.logo img{
+width: 25%;
+            height: 100px;
+            padding-left: 150px;
+}
+        .tb {
+            margin-top: 30px;
+            width: 70%;
+            height: 30px;
+            margin-left: 70px;
+        }
+
+        .bt {
+            margin-top: 30px;
+            margin-left: 80px;
+
+        }
+
+        .btn {
+            background-color:rgba(58, 58, 107, 0.788);
+            width: 60%;
+            height: 40px;
+            outline: none;
+            font-weight: bold;
+            border: 0px solid darkslateblue;
+            text-shadow: 0px 0.5px 0.5px #fff;
+            border-radius: 30px;
+            font-size: 19px;
+            transition: 1s;
+            margin: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 90px;
+            color:whitesmoke;
+        }
+
+        .btn:hover {
+            background-color:rgba(58, 58, 107, 0.788);
+            outline: none;
+            border-radius: 60px;
+            color: whitesmoke;
+            border: 1px solid whitesmoke;
+        }
+    </style>
+    <script>
+        function login() 
+            {
+        if (window.confirm('Are you sure want to login!!!!!!!')){
+            window.location = "hotstarclone.html";
+        }
+        else{
+            window.location="login1.html"
+        }
+            }
+    </script>
+</head>
+
+<body style="background-image: url(https://wallpaperaccess.com/full/2314983.jpg);">
+    <div class="logo">
+        <img src="https://www.freeiconspng.com/uploads/client-login-icon-4.gif" alt="">
+        <div class="login">
+            <input type="text" placeholder="Enter user name here" id="name" class="tb" /><br><br>
+            <input type="password" placeholder="Enter Password here" id="pwd1" class="tb" /><br><br>
+             <input type="submit" value="Login" class="btn" onClick="login()" />
+            <input type="submit" value="Clear"  class="btn" />
+            </div>
+        </div>
+</body>
+
+</html>
